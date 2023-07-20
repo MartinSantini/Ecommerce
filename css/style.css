@@ -1,0 +1,52 @@
+/* Importación de la fuente ROBOTO*/
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #16161a; */
+    /* background-color: #fffffe; */
+    /* background-color: #dfd4a3; */
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    /* background-color: #fffffe; */
+    background-color: #16161a;
+    color: #fffffe;
+    height: 50px;
+    display: flex;
+    padding-top: 5px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.cat-sea{
+    display: flex;
+    width: 300px;
+}
+
+.links{
+    display: flex;
+}
+
+.links a{
+    color: #fffffe;
+    background-color: #16161a;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.links a:hover{
+    text-decoration: underline;
+    color: #7f5af0;
+    font-weight: bolder;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

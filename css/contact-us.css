@@ -1,0 +1,61 @@
+/* Importación de la fuente ROBOTO*/
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+.form-contact-us{
+    /* background-color: #fffffe; */
+    background-color: #16161a;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+    color: #fffffe;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.inp-control, #text-area{
+    /* background-color: #fffffe; */
+    background-color: #16161a;
+    margin: 10px 0;
+    border: 1px solid #7f5af0;
+    font-size: 18px;
+    font-family: "calibri";
+    width: 100%;
+}
+
+.label-p{
+    background-color: #16161a;
+    margin-bottom: 12px;
+}
+
+.btn{
+    background-color: #7f5af0;
+    display: block;
+    color: #fffffe;
+    width: 130px;
+    height: 40px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+span{
+    color: red;
+    background-color: #fffffe;
+    background-color: #16161a;
+}
+
+.form-contact-us h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.inp-control{
+    border-radius: 4px;
+    padding: 10px;
+}
+
+#text-area{
+    border-radius: 4px;
+}
