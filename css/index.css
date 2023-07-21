@@ -1,31 +1,48 @@
-.destacados{
+.sect-buy{
     max-width: 1400px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
 }
 
-.destacados article{
+.sect-buy article{
     box-sizing: content-box;
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 350px;
 }
 
-.destacados article img{
+.sect-buy article img{
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 230px;
 }
 
-.int-title{
+.encabezado-seccion{
     display: block;
     margin-top: 20px;
     text-align: center;
+    text-decoration: underline;
+    font-size: 22px;
 }
 
 .card{
     border: 1px solid black;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card div button{
+    margin-top: 4px;
+    box-sizing: border-box;
+    width: 90%;
+    padding: 4px;
+    margin-bottom: 2px;
+    background-color: rgba(13, 5, 54, 0.815);
+    color: #fff;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.336);
 }
