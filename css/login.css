@@ -1,0 +1,43 @@
+.login{
+    box-sizing: border-box;
+    max-width: 600px;
+    /* border: 1px solid #000; */
+    margin: auto;
+    margin-top: 350px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+.btn-login{
+    width: 90%;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+}
+
+.title-login{
+    text-align: center;
+    margin: 15px;
+    font-size: 24px;
+}
+
+.forgot-pass{
+    display: block;
+}
+
+.reg-log p,.forgot-pass{
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+}
+
+.inp-login{
+    width: 90%;
+    margin: 5px 0px;
+    padding: 10px;
+    border-radius: 2px;
+}

@@ -18,13 +18,14 @@
     color: #fffffe;
     height: 50px;
     display: flex;
-    padding-top: 5px;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     scroll-behavior: smooth;
     width: 100%;
     box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.35);
+    padding: 10px;
+    padding-top: 5px;
 }
 
 .cat-sea{
