@@ -1,0 +1,35 @@
+.img-prod{
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+}
+
+.card-prod{
+    display: flex;
+    margin: 8px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    width: 400px;
+}
+
+.title-desc-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 4px;
+}
+
+.control-buy{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.control-buy button{
+    width: 75px;
+    margin: 5px;
+    padding: 4px;
+    background-color: #000;
+    color: #fff;
+}
+
