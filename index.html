@@ -10,7 +10,7 @@
     <title>Ecommerce</title>
 </head>
 
-<body>
+<body class="body">
 
     <header class="header">
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bookmark-heart" viewBox="0 0 16 16">
@@ -19,7 +19,7 @@
         </svg>
         <!--<img src="" alt="Logo">-->
         <div class="cat-sea">
-            <select title="category" name="category" id="category">
+            <select title="category" name="category" id="category" class="cat">
                 <option value="category">Categoria</option>
                 <option value="baby">Baby</option>
                 <option value="kid">Kid</option>
@@ -29,14 +29,14 @@
     
             <form action="">
                 <input title="search" type="search" name="search" id="search">
-                <button type="submit" value="Search">Search</button>
+                <button type="button" onclick="buscarProductos()" value="Search">Search</button>
             </form>
         </div>
         
         
         <nav class="links">
             <a href="#">Home</a>
-            <a href="./html/contact-us.html">Contact Us</a>
+            <a href="./html/agregarProducto.html">Añadir Producto</a>
             <a href="./html/login.html">Login</a>
             <a href="./html/my-cart.html">My cart</a>
             <div class="profile">
@@ -54,15 +54,13 @@
     <p class="encabezado-seccion">Destacados</p>
     <main class="sect-buy">
 
-        
-
         <article class="card">
             <img src="./assets/clothing-images/WhatsApp Image 2023-07-17 at 10.30.52 AM.jpeg" alt="">
             <div>
                 <h3>Pantalón</h3>
                 <p>Precio <span>$2500</span></p>
                 <button name="buy" type="button">Comprar</button>
-                <button name="addToCart" type="button">Añadir al carrito</button>
+                <button class="añadirCarrito" name="addToCart" type="button">Añadir al carrito</button>
             </div>
         </article>
 
@@ -72,7 +70,7 @@
                 <h3>Pantalón</h3>
                 <p>Precio <span>$2500</span></p>
                 <button name="buy" type="button">Comprar</button>
-                <button name="addToCart" type="button">Añadir al carrito</button>
+                <button class="añadirCarrito" name="addToCart" onclick="añadirCarrito()" type="button">Añadir al carrito</button>
             </div>
         </article>
 
@@ -82,7 +80,7 @@
                 <h3>Pantalón</h3>
                 <p>Precio <span>$2500</span></p>
                 <button name="buy" type="button">Comprar</button>
-                <button name="addToCart" type="button">Añadir al carrito</button>
+                <button class="añadirCarrito" name="addToCart" type="button">Añadir al carrito</button>
             </div>
         </article>
 
@@ -92,7 +90,7 @@
                 <h3>Pantalón</h3>
                 <p>Precio <span>$2500</span></p>
                 <button class="btn-text" name="buy" type="button">Comprar</button>
-                <button name="addToCart" type="button">Añadir al carrito</button>
+                <button class="añadirCarrito" name="addToCart" type="button">Añadir al carrito</button>
             </div>
         </article>
 
@@ -102,7 +100,7 @@
                 <h3>Pantalón</h3>
                 <p>Precio <span>$2500</span></p>
                 <button name="buy" type="button">Comprar</button>
-                <button name="addToCart" type="button">Añadir al carrito</button>
+                <button class="añadirCarrito" name="addToCart" type="button">Añadir al carrito</button>
             </div>
         </article>
 
@@ -112,7 +110,7 @@
                 <h3>Pantalón</h3>
                 <p>Precio <span>$2500</span></p>
                 <button name="buy" type="button">Comprar</button>
-                <button name="addToCart" type="button">Añadir al carrito</button>
+                <button class="añadirCarrito" name="addToCart" type="button">Añadir al carrito</button>
             </div>
         </article>
 
@@ -126,9 +124,9 @@
             <img src="./assets/clothing-images/WhatsApp Image 2023-07-17 at 10.30.52 AM.jpeg" alt="">
             <div>
                 <h3>Pantalón</h3>
-                <p>Precio <span>$2500</span></p>
+                <p>Precio <span class="precioProducto">$2500</span></p>
                 <button name="buy" type="button">Comprar</button>
-                <button name="addToCart" type="button">Añadir al carrito</button>
+                <button class="añadirCarrito" name="addToCart" type="button">Añadir al carrito</button>
             </div>
         </article>
         <article class="card">
@@ -137,7 +135,7 @@
                 <h3>Pantalón</h3>
                 <p>Precio <span>$2500</span></p>
                 <button name="buy" type="button">Comprar</button>
-                <button name="addToCart" type="button">Añadir al carrito</button>
+                <button class="añadirCarrito" name="addToCart" type="button">Añadir al carrito</button>
             </div>
         </article>
         <article class="card">
@@ -146,7 +144,7 @@
                 <h3>Pantalón</h3>
                 <p>Precio <span>$2500</span></p>
                 <button name="buy" type="button">Comprar</button>
-                <button name="addToCart" type="button">Añadir al carrito</button>
+                <button class="añadirCarrito" name="addToCart" type="button">Añadir al carrito</button>
             </div>
         </article>
         <article class="card">
@@ -155,7 +153,7 @@
                 <h3>Pantalón</h3>
                 <p>Precio <span>$2500</span></p>
                 <button name="buy" type="button">Comprar</button>
-                <button name="addToCart" type="button">Añadir al carrito</button>
+                <button class="añadirCarrito" name="addToCart" type="button">Añadir al carrito</button>
             </div>
         </article>
         <article class="card">
@@ -164,7 +162,7 @@
                 <h3>Pantalón</h3>
                 <p>Precio <span>$2500</span></p>
                 <button name="buy" type="button">Comprar</button>
-                <button name="addToCart" type="button">Añadir al carrito</button>
+                <button class="añadirCarrito" name="addToCart" type="button">Añadir al carrito</button>
             </div>
         </article>
         <article class="card">
@@ -173,7 +171,7 @@
                 <h3>Pantalón</h3>
                 <p>Precio <span>$2500</span></p>
                 <button name="buy" type="button">Comprar</button>
-                <button name="addToCart" type="button">Añadir al carrito</button>
+                <button class="añadirCarrito" name="addToCart" type="button">Añadir al carrito</button>
             </div>
         </article>
         <article class="card">
@@ -182,7 +180,7 @@
                 <h3>Pantalón</h3>
                 <p>Precio <span>$2500</span></p>
                 <button name="buy" type="button">Comprar</button>
-                <button name="addToCart" type="button">Añadir al carrito</button>
+                <button class="añadirCarrito" name="addToCart" type="button">Añadir al carrito</button>
             </div>
         </article>
 
@@ -190,8 +188,12 @@
 
 
     <footer>
-            
+        <h2 id="valor">Hola soy un texto!</h2>
+        <button type="button" id="btn-clic" onclick="clic()">Clic Me!</button>
     </footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/busquedaProductos.js"></script>
+    <script src="./js/agregarCarrito.js"></script>
 </body>
 
 </html>

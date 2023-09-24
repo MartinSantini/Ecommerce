@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/login.css">
-    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Añadir Producto</title>
 </head>
 <body class="body">
     <header class="header">
@@ -33,8 +34,8 @@
         
         <nav class="links">
             <a href="../index.html">Home</a>
-            <a href="./agregarProducto.html">Añadir Producto</a>
-            <a href="#">Login</a>
+            <a href="#">Añadir Producto</a>
+            <a href="./login.html">Login</a>
             <a href="./my-cart.html">My cart</a>
             <div class="profile">
                 <figure>
@@ -47,21 +48,48 @@
 
     <main class="main">
         <form class="login" action="">
-            <p class="title-login">Inciar sesión</p>
-            <input class="inp-login" id="user" title="user" type="text" placeholder="Insert his user" required>
-            <input class="inp-login" id="password" title="pass" type="password" placeholder="Insert his password" required>
-            <button class="btn-login" type="submit" onclick="obtenerDatos()" >Login</button>
-            <section class="reg-log">
+            <p class="title-login">Agregar Nuevo Producto</p>
+            <input class="inp-login" id="nombreProducto" title="nameProduct" type="text" placeholder="Inserte el nombre del producto">
+            <input class="inp-login" id="precioProducto" title="priceProduct" type="text" placeholder="Inserte el precio del producto">
+            <input class="inp-login" id="stock" title="stock" type="text" placeholder="Inserte la cantidad de stock">
+            <button class="btn-login" type="button" onclick="agregarProducto()" >Añadir</button>
+            <!-- <button class="btn-login" type="button" onclick="imprimirProductos()">Ver Productos</button> -->
+            <button class="btn-login borrar" onclick="borrar()" type="button" >Eliminar</button>
+
+            <!-- <section class="reg-log">
                 <p>Ya tengo una cuenta <a href="#">iniciar sesión</a></p>
                 <a class="forgot-pass" href="#">He olvidado mi contraseña</a>
-            </section>
+            </section> -->
         </form>
     </main>
+
+    <div class="container">
+        <table class="table table-dark table-striped text-center">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                </tr>    
+            </thead>
+            <tbody id="miTabla">
+
+            </tbody>
+            <tfoot id="footerTabla">
+                <tr>
+                    <td>Cantidad de productos:</td>
+                    <td id="totalProductos"></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 
     <footer>
             
     </footer>
 
-    <!-- <script src="../js/index.js"></script> -->
+    <script src="../js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
